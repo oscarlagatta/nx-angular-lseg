@@ -8,8 +8,6 @@ import { CommonModule } from '@angular/common';
   template: `
     <aside>
       <p>Sidebar</p>
-
-      <p>Added</p>
     </aside>
   `,
   styles: [],
