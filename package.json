@@ -52,7 +52,7 @@
     "jest-preset-angular": "~13.1.0",
     "lint-staged": "^13.2.2",
     "nx": "16.2.2",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.0.2"
@@ -63,10 +63,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,md,ts}": [
+    "{apps,libs}/**/*.{html,json,js,ts}": [
       "npm format --uncommitted",
       "prettier --write",
       "eslint --fix"
+    ],
+    "{apps,libs}/**/*.{css,scss}": [
+      "prettier write"
     ]
   }
 }
