@@ -63,7 +63,7 @@
     }
   },
   "lint-staged": {
-    "{apps,libs}/**/*.{html,json,js,ts}": [
+    "*.{js,json,md,ts}": [
       "npm format --uncommitted",
       "prettier --write",
       "eslint --fix"
