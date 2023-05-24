@@ -1,3 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+$color-primary: #ad3c25;
+$color-secondary: #fff;
+
+$color-menu: #7048e8;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d48;
+
+// FONTS
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 22rem 1fr 22rem;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 1.2rem;
+  grid-template-areas:
+    'header header header'
+    'nav content side'
+    'footer footer footer';
+  height: 100vh;
+}
+
+lseg-main {
+  grid-area: content;
+  background-color: #c67766;
+  padding: 2.5rem;
+}
+
+ul li {
+  color: #fff;
+}
+
+ul li a {
+  color: $color-primary;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  lseg-nav,
+  lseg-aside {
+    margin: 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'nav'
+      'content'
+      'side'
+      'footer';
+    grid-template-rows: auto minmax(6rem, auto) 1fr minmax(7rem, auto) auto;
+  }
 }
