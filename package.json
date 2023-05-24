@@ -65,7 +65,6 @@
   },
   "lint-staged": {
     "{apps,libs}/**/*.{html,json,js,ts}": [
-      "npm format --uncommitted",
       "prettier --write",
       "eslint --fix"
     ],
