@@ -15,8 +15,19 @@
         "main": "apps/prime-ui/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/prime-ui/tsconfig.app.json",
-        "assets": ["apps/prime-ui/src/favicon.ico", "apps/prime-ui/src/assets"],
-        "styles": ["apps/prime-ui/src/styles.scss"],
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "libs/shared/assets/src",
+            "output": "./"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/assets",
+            "output": "assets"
+          }
+        ],
+        "styles": ["libs/shared/styles/src/index.scss"],
         "scripts": []
       },
       "configurations": {
