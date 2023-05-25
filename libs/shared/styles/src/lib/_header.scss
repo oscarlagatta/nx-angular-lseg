@@ -1,0 +1,38 @@
+lseg-header {
+  color: #fff;
+  padding-top: 3rem;
+  grid-area: header;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+
+  align-items: center;
+
+  &__item {
+  }
+
+  &__link:link,
+  &__link:visited {
+    background-color: $color-primary;
+    color: #fff;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    padding: 1.5rem;
+    display: block;
+
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba($color-primary, 0.6);
+    transform: translateY(-3px);
+  }
+}
