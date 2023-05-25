@@ -8,13 +8,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'lseg-layout',
   standalone: true,
-  imports: [
-    CommonModule,
-    HeaderComponent,
-    NavComponent,
-    AsideComponent,
-    FooterComponent,
-  ],
+  imports: [CommonModule, HeaderComponent, NavComponent, AsideComponent, FooterComponent],
   template: `
     <div class="container">
       <lseg-header></lseg-header>
