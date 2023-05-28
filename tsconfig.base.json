@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@lseg/entity/feature-search": ["libs/entity/feature-search/src/index.ts"],
       "@lseg/layout": ["libs/layout/src/index.ts"],
       "@lseg/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@lseg/shared/styles": ["libs/shared/styles/src/index.ts"]
