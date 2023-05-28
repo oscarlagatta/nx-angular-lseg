@@ -19,3 +19,17 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+```
+'nx-enforce-module-boundaries': (boolean | {
+                allow: string[];
+                depConstraints: {
+                    sourceTag: string;
+                    onlyDependOnLibsWithTags: string[];
+                }[];
+                enforceBuildableLibDependency: boolean;
+            })[]
+```
+
+## Feature Entity Search
+`nx g @nx/angular:library --name=feature-search --directory=libs/entity --lazy --routing --displayBlock --inlineStyle --inlineTemplate --standalone --style=scss --tags=scope:prime-ui,type:feature --no-interactive`
