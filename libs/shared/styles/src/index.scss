@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './lib/global';
 @import './lib/typography';
 @import './lib/header';
