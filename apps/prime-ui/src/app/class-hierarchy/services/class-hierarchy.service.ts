@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { catchError, map, Observable, of } from 'rxjs';
+import { catchError, firstValueFrom, map, Observable, of } from 'rxjs';
 import { ClassificationLevel } from '../interfaces/classification-level.interface';
 import { ClassificationScheme } from '../interfaces/classsification-scheme.interface';
 
@@ -16,6 +16,10 @@ export class ClassHierarchyService {
   // ============================================================================
   getClassificationSchemes(): Observable<ClassificationScheme[]> {
     return this.httpClient.get<ClassificationScheme[]>(`${BASE_URL}/classification-schemes`);
+  }
+
+  getClassificationSchemesPromise(): Promise<ClassificationScheme[]> {
+    return firstValueFrom(this.getClassificationSchemes());
   }
 
   getClassificationSchemeById(id: string): Observable<ClassificationScheme | undefined> {
@@ -52,6 +56,10 @@ export class ClassHierarchyService {
   // ============================================================================
   getClassificationLevels(): Observable<ClassificationLevel[]> {
     return this.httpClient.get<ClassificationLevel[]>(`${BASE_URL}/classification-levels`);
+  }
+
+  getClassificationLevelsPromise(): Promise<ClassificationLevel[]> {
+    return firstValueFrom(this.getClassificationLevels());
   }
 
   getClassificationLevelById(id: string): Observable<ClassificationLevel | undefined> {

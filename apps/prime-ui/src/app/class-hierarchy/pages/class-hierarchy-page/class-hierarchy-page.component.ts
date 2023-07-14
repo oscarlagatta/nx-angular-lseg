@@ -3,7 +3,6 @@ import { Store } from '@ngrx/store';
 import { classHierarchyActions, classHierarchyFeature, selectLevelsWithParameters } from '../../data';
 import { ClassificationLevel } from '../../interfaces/classification-level.interface';
 import { ClassificationScheme } from '../../interfaces/classsification-scheme.interface';
-import { ClassHierarchyService } from '../../services/class-hierarchy.service';
 
 @Component({
   selector: 'lseg-class-hierarchy-page',
@@ -28,6 +27,7 @@ export class ClassHierarchyPageComponent implements OnInit {
   // LEVELS
   // ------
   levels: Signal<ClassificationLevel[]> = this.store.selectSignal(classHierarchyFeature.selectLevels);
+
   // levels: Signal<ClassificationLevel[]> = this.store.selectSignal(selectLevelsWithParameters('DAR'));
 
   ngOnInit(): void {
