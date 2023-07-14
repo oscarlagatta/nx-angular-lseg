@@ -10,16 +10,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
   standalone: true,
   imports: [CommonModule, HeaderComponent, NavComponent, AsideComponent, FooterComponent],
   template: `
-    <div class="container">
-      <lseg-header></lseg-header>
+    <div>
+      <!--      <lseg-header></lseg-header>-->
 
-      <lseg-nav></lseg-nav>
+      <!--      <lseg-nav></lseg-nav>-->
 
       <ng-content></ng-content>
 
-      <lseg-aside></lseg-aside>
+      <!--      <lseg-aside></lseg-aside>-->
 
-      <lseg-footer></lseg-footer>
+      <!--      <lseg-footer></lseg-footer>-->
     </div>
   `,
   styles: [],

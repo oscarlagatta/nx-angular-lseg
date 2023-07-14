@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "i": "John Doe",
+      "email": "john.due@gmail.com"
+    }
+  ],
+  "classification-schemes": [
+    {
+      "id": 1,
+      "scheme": "DAR",
+      "name": "Digital Asset Classification",
+      "lock": false,
+      "created": "Oscar"
+    },
+    {
+      "id": 2,
+      "scheme": "FTSE_CAN",
+      "name": "FTSE_CANADA Classification",
+      "lock": false,
+      "created": "Oscar"
+    },
+    {
+      "id": 3,
+      "scheme": "ICB",
+      "name": "Industry Classification Benchmark",
+      "lock": false,
+      "created": "Oscar"
+    },
+    {
+      "id": 4,
+      "scheme": "NAREI",
+      "name": "NAREIT CLASSIFICATION STRUCTURE",
+      "lock": false,
+      "created": "Oscar"
+    },
+    {
+      "id": 5,
+      "scheme": "NEWICB",
+      "name": "Industry Classification Benchmark",
+      "created": "Oscar"
+    },
+    {
+      "id": 6,
+      "scheme": "YYY",
+      "name": "Y Y Y Data",
+      "created": "Oscar"
+    }
+  ],
+  "classification-levels" : [
+    {
+      "id": 1,
+      "level": 1,
+      "scheme": "DAR",
+      "name": "DAR Industry",
+      "created": "Oscar"
+    },
+    {
+      "id": 2,
+      "level": 2,
+      "scheme": "DAR",
+      "name": "DAR Super-sector 2",
+      "created": "Oscar"
+    },
+    {
+      "id": 3,
+      "level": 3,
+      "scheme": "DAR",
+      "name": "DAR Sector",
+      "created": "Oscar"
+    },
+    {
+      "id": 4,
+      "level": 4,
+      "scheme": "DAR",
+      "name": "DAR Sub-sector",
+      "created": "Oscar"
+    },
+    {
+      "id": 5,
+      "level": 1,
+      "scheme": "FTSE_CAN",
+      "name": "Industry Sector",
+      "created": "Oscar"
+    },
+    {
+      "id": 6,
+      "level": 2,
+      "scheme": "FTSE_CAN",
+      "name": "Industry Group",
+      "created": "Oscar"
+    },
+    {
+      "id": 7,
+      "level": 3,
+      "scheme": "FTSE_CAN",
+      "name": "Industry Sub-group",
+      "created": "Oscar"
+    }
+  ]
+}
