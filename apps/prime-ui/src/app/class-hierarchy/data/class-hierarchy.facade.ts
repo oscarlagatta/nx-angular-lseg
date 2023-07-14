@@ -3,6 +3,11 @@ import { ClassificationLevel } from '../interfaces/classification-level.interfac
 import { ClassificationScheme } from '../interfaces/classsification-scheme.interface';
 import { ClassHierarchyService } from '../services/class-hierarchy.service';
 
+function equal(a: unknown, b: unknown) {
+  return a === b;
+}
+
+// STAGE 1
 @Injectable()
 export class ClassHierarchyBasicFacade {
   private classHierarchyService = inject(ClassHierarchyService);
@@ -13,8 +18,8 @@ export class ClassHierarchyBasicFacade {
   });
 
   // schemes: Signal<ClassificationScheme[]>;
-  readonly schemes = computed(() => this.state().schemes);
-  readonly levels = computed(() => this.state().levels);
+  readonly schemes = computed(() => this.state().schemes, { equal });
+  readonly levels = computed(() => this.state().levels, { equal });
 
   async loadSchemes(): Promise<void> {
     const schemes = await this.classHierarchyService.getClassificationSchemesPromise();
