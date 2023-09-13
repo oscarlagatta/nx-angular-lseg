@@ -5,11 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'lseg-footer',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <footer>
-      <span>London Stock Exchange</span>
-    </footer>
-  `,
-  styles: [],
+  template: ` <footer><ng-content></ng-content></footer> `,
+  styleUrls: ['footer.component.scss'],
 })
 export class FooterComponent {}

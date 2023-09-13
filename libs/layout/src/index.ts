@@ -1,2 +1,1 @@
-export * from './lib/layout.module';
-export { MainComponent } from './lib/components/main/main.component';
+export { LayoutComponent } from './lib/containers/layout/layout.component';

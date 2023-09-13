@@ -27,7 +27,13 @@
             "output": "assets"
           }
         ],
-        "styles": ["libs/shared/styles/src/index.scss"],
+        "styles": [
+          "node_modules/devextreme/dist/css/dx.common.css",
+          "libs/shared/styles/src/lib/themes/generated/theme.base.css",
+          "libs/shared/styles/src/lib/themes/generated/theme.additional.css",
+          "libs/shared/styles/src/lib/dx-styles.scss",
+          "libs/shared/styles/src/index.scss"
+        ],
         "scripts": []
       },
       "configurations": {
