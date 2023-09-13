@@ -23,6 +23,11 @@
           },
           {
             "glob": "**/*",
+            "input": "./node_modules/devextreme/dist/css/",
+            "output": "assets"
+          },
+          {
+            "glob": "**/*",
             "input": "libs/shared/assets/src/assets",
             "output": "assets"
           }
